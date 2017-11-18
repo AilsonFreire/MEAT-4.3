@@ -1,6 +1,6 @@
 export interface Restaurant {
 
-    id : number;
+    id : string;
     name : string;
     category : string;
     deliveryEstimate : string;
