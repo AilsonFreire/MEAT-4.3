@@ -1,4 +1,4 @@
-import { Restaurant } from "./restaurant/restaurant.model";
+import { Restaurant } from "../restaurants/restaurant/restaurant.model";
 import { MEAT_API} from "../app.api";
 import { Injectable } from "@angular/core";
 import { Http } from "@angular/http";

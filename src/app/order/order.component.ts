@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RadioOption } from 'app/shared/radio/radio-option.model';
-import { OrderService } from 'app/order/order.service';
+import { OrderService } from 'app/core/order.service';
 import { CartItem } from 'app/restaurant-detail/shopping-cart/cart-item.model';
 import { Order, OrderItem } from 'app/order/order.model';
 import { Router } from '@angular/router';
@@ -9,7 +9,6 @@ import { FormGroup, FormBuilder, Validators, AbstractControl } from '@angular/fo
 @Component({
   selector: 'mt-order',
   templateUrl: './order.component.html',
-  styleUrls: ['./order.component.css']
 })
 export class OrderComponent implements OnInit {
 
