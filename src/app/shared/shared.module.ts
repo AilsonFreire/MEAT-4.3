@@ -4,12 +4,14 @@ import { InputComponent } from 'app/shared/input/input.component';
 import { RadioComponent } from 'app/shared/radio/radio.component';
 import { RatingComponent } from 'app/shared/rating/rating.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SnackbarComponent } from './message/snackbar/snackbar.component';
 
 @NgModule({
   declarations: [
     InputComponent,
     RadioComponent,
-    RatingComponent
+    RatingComponent,
+    SnackbarComponent
   ],
   imports: [
     CommonModule, FormsModule, ReactiveFormsModule
@@ -18,6 +20,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     InputComponent,
     RadioComponent,
     RatingComponent,
+    SnackbarComponent,
     CommonModule, //contém os *ngIf *ngFor e outros componentes de função angular
     FormsModule, 
     ReactiveFormsModule
