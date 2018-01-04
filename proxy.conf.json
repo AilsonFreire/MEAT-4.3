@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://gowaned-jigs.000webhostapp.com/server/db.json",
+    "secure": false,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true
+  }
+}
