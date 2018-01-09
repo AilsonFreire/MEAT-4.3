@@ -18,11 +18,11 @@ export class RestaurantsService {
         if(search){
             params = new HttpParams().append('q', search)
         }
-        return this.http.get<Restaurant[]>(`${MEAT_API}/restaurants/`, {params: params})
+        return this.http.get<Restaurant[]>(`${MEAT_API}/restaurants.json`, {params: params})
     }
 
     restaurantById (id : string) : Observable<Restaurant>{
-        return this.http.get<Restaurant>(`${MEAT_API}/restaurants/${id}`)
+        return this.http.get<Restaurant>(`${MEAT_API}/restaurants/:[]:${id}`)
     }
 
     reviewsOfRestaurant( id : string ) : Observable<any>{

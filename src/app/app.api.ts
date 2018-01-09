@@ -1,1 +1,1 @@
-export const MEAT_API = "http://localhost:3000"
+export const MEAT_API = "https://mypersonalpage-b4514.firebaseio.com/"
